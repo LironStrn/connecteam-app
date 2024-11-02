@@ -19,3 +19,27 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn-arrow {
+  display: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.btn-arrow-visible {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.section-link:hover {background-color: #0098DA !important;}
+.section-link:hover .btn-text {color: white;}
+.section-link:hover .btn-icon {display: none;}
+.section-link:hover .btn-arrow {display: inline;}
+
+.heroLink:hover {background-color: #ED8E00 !important;}
+.heroLink:hover .hero-link-text {color: white;}
+.heroLink:hover .hero-link-icon {display: none;}
+.heroLink:hover .btn-arrow {display: inline;}
+
+.form-para-cont p:first-of-type {font-weight: 300;}
