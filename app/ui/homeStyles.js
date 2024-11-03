@@ -71,8 +71,8 @@ export const navArrowLinkStyle = {
     height: '40px',
     textAlign: 'center',
     position: 'relative',
-    top: '85%',
-    left: '21%',
+    //top: '85%',
+    //left: '21%',
 };
 
 export const navArrowStyle = {

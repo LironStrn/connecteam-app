@@ -65,14 +65,16 @@ export default async function FooterForm({ formContent }) {
 
     return (
         <>
-            <span className={`${inter.className}`}>{formContent.title}</span>
+            <div className='p-4'>
+                <span className={`${inter.className}`}>{formContent.title}</span>
+            </div>
             <Form action='#'>
-                <div className='flex items-center flex-col md:flex-row mt-3'>
-                    <TextField sx={sxStyle} className={`mr-3`} label={formContent.fields[0].name} variant="outlined" />
+                <div className='flex items-center flex-col md:flex-row md:mt-3'>
+                    <TextField sx={sxStyle} className={`my-3 md:my-1 md:mr-3 `} label={formContent.fields[0].name} variant="outlined" />
                     <TextField sx={sxStyle} label={formContent.fields[1].name} variant="outlined" />
                 </div>
-                <div className='flex items-center flex-col md:flex-row mt-3'>
-                    <TextField sx={sxStyle} className={`mr-3`} id="outlined-basic" label={formContent.fields[2].name} variant="outlined" />
+                <div className='flex items-center flex-col md:flex-row md:mt-3'>
+                    <TextField sx={sxStyle} className={`my-3 md:my-1 md:mr-3`} id="outlined-basic" label={formContent.fields[2].name} variant="outlined" />
                     <Box sx={sxStyle}>
                         <FormControl fullWidth>
                             <InputLabel id="footer-form-select-label" className={`${inter.className}`}>{formContent.fields[3].name}</InputLabel>
@@ -101,7 +103,7 @@ export default async function FooterForm({ formContent }) {
                         variant="outlined"
                     />
                 </div>
-                <div className='mt-5 w-[250px]'>
+                <div className='my-5 md:w-[250px] flex justify-center px-4'>
                     <ActionButton href={'#'} >
                         {formContent.submitLabel}
                     </ActionButton>

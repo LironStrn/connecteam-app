@@ -48,7 +48,7 @@ export default async function DoloSection() {
     }
 
     const sectionLinkStyle = {
-        width: 'fit-content',
+        //width: 'fit-content',
         height: '55px',
         borderRadius: '32px',
         textAlign: 'center',
@@ -64,83 +64,78 @@ export default async function DoloSection() {
 
     return (
         <>
-            <div className="text-center py-10" style={backGround} id="section3">
+            <div className="md:text-center md:py-10 pb-4" style={backGround} id="section3">
                 <div style={imgContStyle}>
-                    <Image
-                        className="ml-1 mt-1"
+                    <img
+                        className="ml-1 mt-1 hidden lg:block"
                         src={`https://connecteam.com/static/frontend-home-task/jpg/dolore-ipsum-large.jpg`}
                         alt="Next.js logo"
                         width={1000}
                         height={1000}
                         style={imgStyle}
-                        priority
                     />
                 </div>
 
-                <div className="flex justify-center">
-                    <div style={iconContStyle}>
-                        <Image
+                <div className="flex md:justify-center ml-3 mt-3">
+                    <div style={iconContStyle} className="ml-3 mt-3">
+                        <img
                             className="ml-1 mt-1"
                             src={`/${content.icon}.svg`}
                             alt="Next.js logo"
                             width={64}
                             height={64}
                             style={mainIconStyle}
-                            priority
                         />
                     </div>
                 </div>
-                <div className="flex justify-center">
-                    <div className="w-[1120px]">
+                <div className="flex md:justify-center ml-3 mt-3">
+                    <div className="md:w-[1120px]">
                         <span className={`${inter.className} text-[12px] text-[#9CB8C3] uppercase`}>{content.label}</span>
                         <h1 className={`${merriweather.className} text-[42px] text-[#0098DA]`}>{content.title}</h1>
                         <div className={`${inter.className} text-white`} dangerouslySetInnerHTML={{ __html: content.description }}></div>
                     </div>
                 </div>
                 <div className="flex justify-center my-5">
-                    <div className="w-[1120px]">
+                    <div className="md:w-[1120px]">
                         <Divider style={dividerStyle} variant="fullWidth"></Divider>
                     </div>
                 </div>
-                <div className="flex justify-center gap-6 mt-5">
+                <div className="flex items-center flex-col md:flex-row md:justify-center gap-6 mt-5">
 
-                    <Link style={{ ...sectionLinkStyle, ...blur }} className={`section-link ${merriweather.className} flex pt-3 bg-transparent text-[#0098DA] border-2 border-[#0098DA]`} href={'#'}>
-                        <Image
+                    <Link style={{ ...sectionLinkStyle, ...blur }} className={`section-link ${merriweather.className} flex justify-center pt-3 bg-transparent text-[#0098DA] border-2 border-[#0098DA] w-[352px]`} href={'#'}>
+                        <img
                             className="btn-icon"
                             src="/icon-1.svg"
                             alt="Next.js logo"
                             width={16}
                             height={16}
                             style={btnIconStyle}
-                            priority
                         />
                         <span className="ml-6 btn-text">Voluptatem repudiandae et</span>
                         <span className={`ml-2 btn-arrow ${inter.className}`}>→</span>
                     </Link>
-                    <Link style={{ ...sectionLinkStyle, ...blur }} className={`section-link ${merriweather.className} flex pt-3 bg-transparent text-[#0098DA] border-2 border-[#0098DA]`} href={'#'}>
-                        <Image
+                    <Link style={{ ...sectionLinkStyle, ...blur }} className={`section-link ${merriweather.className} flex justify-center pt-3 bg-transparent text-[#0098DA] border-2 border-[#0098DA] w-[352px]`} href={'#'}>
+                        <img
                             className="btn-icon"
                             src="/icon-6.svg"
                             alt="Next.js logo"
                             width={16}
                             height={16}
                             style={btnIconStyle}
-                            priority
                         />
-                        <span className="ml-4 btn-text">Et aperiam et est</span>
+                        <span className="ml-6 btn-text">Et aperiam et est</span>
                         <span className={`ml-2 btn-arrow ${inter.className}`}>→</span>
                     </Link>
-                    <Link style={{ ...sectionLinkStyle, ...blur }} className={`section-link ${merriweather.className} flex pt-3 bg-transparent text-[#0098DA] border-2 border-[#0098DA]`} href={'#'}>
-                        <Image
+                    <Link style={{ ...sectionLinkStyle, ...blur }} className={`section-link ${merriweather.className} flex justify-center pt-3 bg-transparent text-[#0098DA] border-2 border-[#0098DA] w-[352px]`} href={'#'}>
+                        <img
                             className="btn-icon"
                             src="/icon-7.svg"
                             alt="Next.js logo"
                             width={16}
                             height={16}
                             style={btnIconStyle}
-                            priority
                         />
-                        <span className="ml-4 btn-text">Minima aut omnis</span>
+                        <span className="ml-6 btn-text">Minima aut omnis</span>
                         <span className={`ml-2 btn-arrow ${inter.className}`}>→</span>
                     </Link>
                 </div>

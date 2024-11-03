@@ -21,10 +21,10 @@ export default async function SitSection() {
     };
 
     const imageStyling = {
-        position: 'relative',
+        //position: 'relative',
         bottom: '70px',
         height: '100%',
-        borderRadius: '50%'
+        //borderRadius: '50%'
     }
 
     const imgIconContStyle = {
@@ -33,61 +33,58 @@ export default async function SitSection() {
         backdropFilter: 'blur(10px)',
         maxWidth: 'fit-content',
         padding: '20px',
-        borderRadius: '50%',
+        //borderRadius: '50%',
         borderWidth: '4px',
         borderColor: 'white',
         minWidth: '108px',
         height: '108px',
-        float: 'right',
-        bottom: '190px'
+        //float: 'right',
+        //bottom: '25%'
     };
 
     return (
         <>
-            <div className='flex justify-center h-[440px]' id="section2">
+            <div className='flex flex-col md:flex-row md:justify-center md:h-[440px]' id="section2">
                 
-                <div className='w-[400px] h-[400px] mr-8'>
-                    <Image
-                        className="mr-1"
+                <div className='md:w-[400px] h-[400px] md:mr-8'>
+                    <img
+                        className="mr-1 md:rounded-full"
                         src='https://connecteam.com/static/frontend-home-task/jpg/sit-et-enim-large.jpg'
                         alt="Next.js logo"
                         width={440}
                         height={440}
                         style={imageStyling}
-                        priority
                     />
-                    <div style={imgIconContStyle}>
-                        <Image
+                    <div style={imgIconContStyle} className='float-right md:float-left rounded-l-[50%] md:rounded-full bottom-[95%] md:bottom-[25%]'>
+                        <img
                             className=""
                             src={`/${content.icon}.svg`}
-                            alt="Next.js logo"
+                            alt="image icon"
                             width={64}
                             height={64}
                             style={iconStyle}
-                            priority
                         />
                     </div>
                 </div>
-                <div className='card-text w-[700px]'>  
-                    <div className='flex'>
+                <div className='card-text md:w-[700px]'>  
+                    <div className='flex ml-3 mt-3'>
                         <div style={iconContStyle}>
-                            <Image
+                            <img
                                 className="mr-1"
                                 src={`/${content.icon}.svg`}
                                 alt="Next.js logo"
                                 width={36}
                                 height={36}
                                 style={iconStyle}
-                                priority
                             />
                         </div>
                         <div>
                             <span className={`${inter.className} text-[12px] uppercase`}>{content.label}</span>
-                            <h1 className={`${merriweather.className} text-[32px] text-[#00CDDA] leading-[28px]`}>{content.title}</h1>
+                            <h1 className={`${merriweather.className} text-[28px] md:text-[32px] text-[#00CDDA] leading-[28px]`}>{content.title}</h1>
                         </div>
                     </div>
-                    <div className={inter.className} dangerouslySetInnerHTML={{__html: content.description}}></div>
-                    <div>
+                    <div className={`${inter.className} ml-3 mt-3`} dangerouslySetInnerHTML={{__html: content.description}}></div>
+                    <div className='ml-3 mt-3'>
                         <span className={`${merriweather.className} text-[19px] text-[#00CDDA]`}>Omnis voluptas rerum fuga maiores rem in <span className={`text-[#00CDDA] ml-2 btn-arrow-visible ${inter.className}`}>→</span></span>
                     </div>
                 </div>

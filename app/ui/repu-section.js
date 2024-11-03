@@ -21,10 +21,10 @@ export default async function RepuSection() {
     };
 
     const imageStyling = {
-        position: 'relative',
+        //position: 'relative',
         bottom: '70px',
         height: '100%',
-        borderRadius: '50%'
+        //borderRadius: '50%'
     }
 
     const imgIconContStyle = {
@@ -33,60 +33,57 @@ export default async function RepuSection() {
         backdropFilter: 'blur(10px)',
         maxWidth: 'fit-content',
         padding: '20px',
-        borderRadius: '50%',
+        //borderRadius: '50%',
         borderWidth: '4px',
         borderColor: 'white',
         minWidth: '108px',
         height: '108px',
-        float: 'right',
-        bottom: '190px'
+        //float: 'right',
+        //bottom: '25%'
     };
 
     return (
         <>
-            <div className='flex justify-center mt-[150px] h-[400px]' id="section1">
-                <div className='card-text w-[700px]'>  
-                    <div className='flex'>
+            <div className='flex flex-col-reverse md:flex-row md:justify-center mt-[280px] md:mt-[25px] md:mt-8 h-[440px]' id="section1">
+                <div className='card-text md:w-[700px]'>  
+                    <div className='flex ml-3 mt-3'>
                         <div style={iconContStyle}>
-                            <Image
+                            <img
                                 className="mr-1"
                                 src={`/${content.icon}.svg`}
                                 alt="Next.js logo"
                                 width={36}
                                 height={36}
                                 style={iconStyle}
-                                priority
                             />
                         </div>
                         <div>
                             <span className={`${inter.className} text-[12px] uppercase`}>{content.label}</span>
-                            <h1 className={`${merriweather.className} text-[32px] text-[#7A00DA] leading-[28px]`}>{content.title}</h1>
+                            <h1 className={`${merriweather.className} text-[28px] md:text-[32px] text-[#7A00DA] leading-[28px]`}>{content.title}</h1>
                         </div>
                     </div>
-                    <div className={inter.className} dangerouslySetInnerHTML={{__html: content.description}}></div>
-                    <div>
+                    <div className={`${inter.className} ml-3 mt-3`} dangerouslySetInnerHTML={{__html: content.description}}></div>
+                    <div className='ml-3 mt-3'>
                         <span className={`${merriweather.className} text-[19px] text-[#7A00DA]`}>Molestiae architecto odit quas dicta nobis <span className={`text-[#7A00DA] ml-2 btn-arrow-visible ${inter.className}`}>→</span></span>
                     </div>
                 </div>
-                <div className='w-[440px] h-[440px]'>
-                    <Image
-                        className="mr-1"
+                <div className='md:w-[440px] h-[440px]'>
+                    <img
+                        className="mr-1 md:rounded-full"
                         src='https://connecteam.com/static/frontend-home-task/jpg/repudiandae-large.jpg'
                         alt="Next.js logo"
                         width={440}
                         height={440}
                         style={imageStyling}
-                        priority
                     />
-                    <div style={imgIconContStyle}>
-                        <Image
+                    <div style={imgIconContStyle} className='float-right rounded-l-[50%] md:rounded-full bottom-[95%] md:bottom-[25%]'>
+                        <img
                             className="mr-1"
                             src={`/${content.icon}.svg`}
-                            alt="Next.js logo"
+                            alt="image icon"
                             width={64}
                             height={64}
                             style={iconStyle}
-                            priority
                         />
                     </div>
                 </div>

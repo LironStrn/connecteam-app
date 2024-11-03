@@ -33,7 +33,7 @@ export default function MultiSelect({ selectContent }) {
         },
     }
     return (
-        <div style={{ padding: '10px' }}>
+        <div style={{ padding: '10px' }} className='flex flex-col'>
             <p style={{ fontWeight: 'bold', marginBottom: '8px' }} className={`${inter.className}`}>Dolores nostrum neque quas</p>
             <Box
                 sx={{
