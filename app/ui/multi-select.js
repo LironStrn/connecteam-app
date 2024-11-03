@@ -34,7 +34,7 @@ export default function MultiSelect({ selectContent }) {
     }
     return (
         <div style={{ padding: '10px' }} className='flex flex-col'>
-            <p style={{ fontWeight: 'bold', marginBottom: '8px' }} className={`${inter.className}`}>Dolores nostrum neque quas</p>
+            <p style={{ fontWeight: 'bold', marginBottom: '8px' }} className={`${inter.className} text-[#6A6A6A]`}>Dolores nostrum neque quas</p>
             <Box
                 sx={{
                     display: 'inline-flex',

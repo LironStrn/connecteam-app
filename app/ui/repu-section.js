@@ -44,7 +44,7 @@ export default async function RepuSection() {
 
     return (
         <>
-            <div className='flex flex-col-reverse md:flex-row md:justify-center mt-[280px] md:mt-[25px] md:mt-8 h-[440px]' id="section1">
+            <div className='flex flex-col-reverse md:flex-row md:justify-center mt-[280px] md:mt-[25px] md:mt-8 h-[440px] bg-[#ffffff]' id="section1">
                 <div className='card-text md:w-[700px]'>  
                     <div className='flex ml-3 mt-3'>
                         <div style={iconContStyle}>
@@ -58,11 +58,11 @@ export default async function RepuSection() {
                             />
                         </div>
                         <div>
-                            <span className={`${inter.className} text-[12px] uppercase`}>{content.label}</span>
+                            <span className={`${inter.className} text-[12px] uppercase text-[#6A6A6A]`}>{content.label}</span>
                             <h1 className={`${merriweather.className} text-[28px] md:text-[32px] text-[#7A00DA] leading-[28px]`}>{content.title}</h1>
                         </div>
                     </div>
-                    <div className={`${inter.className} ml-3 mt-3`} dangerouslySetInnerHTML={{__html: content.description}}></div>
+                    <div className={`${inter.className} ml-3 mt-3 text-[#6A6A6A]`} dangerouslySetInnerHTML={{__html: content.description}}></div>
                     <div className='ml-3 mt-3'>
                         <span className={`${merriweather.className} text-[19px] text-[#7A00DA]`}>Molestiae architecto odit quas dicta nobis <span className={`text-[#7A00DA] ml-2 btn-arrow-visible ${inter.className}`}>→</span></span>
                     </div>

@@ -66,7 +66,7 @@ export default async function FooterForm({ formContent }) {
     return (
         <>
             <div className='p-4'>
-                <span className={`${inter.className}`}>{formContent.title}</span>
+                <span className={`${inter.className} text-[#6A6A6A]`}>{formContent.title}</span>
             </div>
             <Form action='#'>
                 <div className='flex items-center flex-col md:flex-row md:mt-3'>

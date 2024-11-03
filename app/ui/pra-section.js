@@ -44,7 +44,7 @@ export default async function PraSection() {
 
     return (
         <>
-            <div className='flex flex-col-reverse md:flex-row md:justify-center items-center mt-[100px] md:mt-[1px] md:my-5 md:py-10 h-[440px]' id="section4">
+            <div className='flex flex-col-reverse md:flex-row md:justify-center items-center mt-[100px] md:mt-[1px] md:my-5 md:py-10 h-[440px] bg-[#ffffff]' id="section4">
                 <div className='card-text md:w-[700px]'>  
                     <div className='flex ml-3 mt-3'>
                         <div style={iconContStyle}>
@@ -58,11 +58,11 @@ export default async function PraSection() {
                             />
                         </div>
                         <div>
-                            <span className={`${inter.className} text-[12px] uppercase`}>{content.label}</span>
+                            <span className={`${inter.className} text-[12px] uppercase text-[#6A6A6A]`}>{content.label}</span>
                             <h1 className={`${merriweather.className} text-[28px] md:text-[32px] text-[#DA0069] leading-[28px]`}>{content.title}</h1>
                         </div>
                     </div>
-                    <div className={`${inter.className} ml-3 mt-3`} dangerouslySetInnerHTML={{__html: content.description}}></div>
+                    <div className={`${inter.className} ml-3 mt-3 text-[#6A6A6A]`} dangerouslySetInnerHTML={{__html: content.description}}></div>
                     <div className='ml-3 mt-3'>
                         <span className={`${merriweather.className} text-[19px] text-[#DA0069]`}>Consequatur rerum molestiae <span className={`text-[#DA0069] ml-2 btn-arrow-visible ${inter.className}`}>→</span></span>
                     </div>

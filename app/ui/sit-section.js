@@ -44,7 +44,7 @@ export default async function SitSection() {
 
     return (
         <>
-            <div className='flex flex-col md:flex-row md:justify-center md:h-[440px]' id="section2">
+            <div className='flex flex-col md:flex-row md:justify-center md:h-[440px] bg-[#ffffff]' id="section2">
                 
                 <div className='md:w-[400px] h-[400px] md:mr-8'>
                     <img
@@ -79,11 +79,11 @@ export default async function SitSection() {
                             />
                         </div>
                         <div>
-                            <span className={`${inter.className} text-[12px] uppercase`}>{content.label}</span>
+                            <span className={`${inter.className} text-[12px] uppercase text-[#6A6A6A]`}>{content.label}</span>
                             <h1 className={`${merriweather.className} text-[28px] md:text-[32px] text-[#00CDDA] leading-[28px]`}>{content.title}</h1>
                         </div>
                     </div>
-                    <div className={`${inter.className} ml-3 mt-3`} dangerouslySetInnerHTML={{__html: content.description}}></div>
+                    <div className={`${inter.className} ml-3 mt-3 text-[#6A6A6A]`} dangerouslySetInnerHTML={{__html: content.description}}></div>
                     <div className='ml-3 mt-3'>
                         <span className={`${merriweather.className} text-[19px] text-[#00CDDA]`}>Omnis voluptas rerum fuga maiores rem in <span className={`text-[#00CDDA] ml-2 btn-arrow-visible ${inter.className}`}>→</span></span>
                     </div>
